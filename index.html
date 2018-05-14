@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="title" content="Анкета">
+<meta name="description" content="Личная информация о сотруднике Веб Мастерской. Опыт работы, навыки, уровни владения JavaScript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Анкета</title>
+<link rel="shortcut icon" href="favicon.png" type="image/png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+	<div class="container">
+		<nav>
+			<ul>
+				<li class="active" data-id="pers_info">Личная информация</li>
+				<li data-id="expirience">Опыт</li>
+				<li data-id="js_level">JavaScript</li>
+				<li data-id="about">О себе</li>
+			</ul>
+		</nav>
+		<div class="burger-menu">
+		  <div class="burger"></div>  
+		</div>
+	</div>
+</header>
+<form action="." method="post" class="all_info">
+<section class="pers_info">
+	<div class="container">
+		<h1>Анкета</h1>
+		<img src="images/pers_info_before.png" alt="pers_info_before.png" class="pers_icon">
+		<h2>Личная информация</h2>
+		<div class="pers_inputs">
+			<input type="text" name="user_fio" placeholder="ФИО" value="Самковский Станислав Игоревич" required>
+			<input type="text" name="user_year" id="datepicker" placeholder="Год рождения" value="27/09/1994">
+			<input type="text" name="user_loc" placeholder="Место проживания" value="Харьков, Украина" id="autocomplete" required>
+			<input type="text" name="user_skype" placeholder="Skype" value="Станислав Самковский" required>
+			<input type="email" name="user_mail" placeholder="E-mail" value="samkovsky@gmail.com" required>
+		</div>
+	</div>
+</section>
+<section class="expirience">
+	<div class="container">
+		<img src="images/about_icon.png" alt="about_icon.png" class="exp_icon">
+		<h2>Расскажите о своем опыте</h2>
+		<div class="exp_list">
+			<ul>
+				<li>
+					<label>
+						<input type="checkbox" checked>
+						<span></span>
+						<span>БЭМ/OOCSS</span>
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="checkbox" checked>
+						<span></span>
+						<span>Верстаю семантично</span>
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="checkbox">
+						<span></span>
+						<span>Webpack</span>
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="checkbox" checked>
+						<span></span>
+						<span>Stylus/LESS/SASS</span>
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="checkbox">
+						<span></span>
+						<span>ES2015/ES2016</span>
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="checkbox" checked>
+						<span></span>
+						<span>jQuery</span>
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="checkbox" checked>
+						<span></span>
+						<span>Работаю с SVG</span>
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="checkbox" checked>
+						<span></span>
+						<span>Gulp/GRUNT</span>
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="checkbox" checked>
+						<span></span>
+						<span>Ипользую Git</span>
+					</label>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="js_level">
+	<div class="container">
+		<img src="images/js_icon.png" alt="js_icon.png" class="js_icon">
+		<h2>Уровень владения JavaScript</h2>
+		<div id="slider"></div>
+		<div class="slider_info">
+			<ul>
+				<li>A - Не владею</li>
+				<li>B - Использую готовые решения</li>
+				<li>C - Использую готовые решения и умею их переделывать</li>
+				<li>D - Пишу сложный JS с нуля</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="about">
+	<div class="container">
+		<img src="images/self_icon.png" alt="self_icon.png" class="self_icon">
+		<h2>Расскажите о себе</h2>
+		<p>Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+		<textarea name="user_message" value="Понравилось тем что ваша фирма уже довольно давно существует что вызывает доверие и я у верен что за это время вы работали с разной сложности проектами. Мне интересны крупные, сложные проекты и участие в них пускай даже и частичное. Мне всегда было интересно развиваться и улучшать свои навыки а у вас уже сформировалась опытная и профессиональная команда. Спасибо большое за приглашение!"  required></textarea>
+		<button>Готово</button>
+	</div>
+</section>
+</form>
+<div class="tnx_popup">
+	<div class="popup">
+		<p>Спасибо большое за приглашение! :)</p>
+	</div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAxRaIJAWfwfGfuIgIzWdNI3Z45KmU7OA&sensor=false&libraries=places&language=en"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
